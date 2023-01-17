@@ -1,0 +1,6 @@
+<li th:if="${activePage == 'home'}" class="nav-item">
+    <a class="nav-link active" th:href="@{/?activePage=home}">Home</a>
+  </li>
+  <li th:unless="${activePage == 'home'}" class="nav-item">
+      <a class="nav-link" th:href="@{/?activePage=home}">Home</a>
+  </li>
